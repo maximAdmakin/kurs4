@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Citizen</title>
+    <link rel="stylesheet" type="text/css" href="css/citizen.css">
+</head>
+<body>
+    <div id="logout">
+        <form action="/logout" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+    </div>
+    <div id="applicationForm">
+        <h2>New application</h2>
+        <textarea id = "citizenApplication" type="text"></textarea>
+        <button onclick="sentCitizenApplication()">Sent Application</button>
+    </div>
+    <div id="getApplication">
+        <h2>Applications</h2>
+        <button onclick="getCitizenApplications()">Reload Applications</button>
+        <div id="applications"></div>
+    </div>
+
+    <div id = "notificationsForm">
+        <h2>Notifications</h2>
+    </div>
+
+</body>
+<script src="citizen.js"></script>
+</html>
